@@ -1,0 +1,35 @@
+@import '../../../scss/index.scss';
+
+.no-songs {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.chakra-table.list-songs {
+    background-color: transparent !important;
+    margin-top: 50px;
+
+    th, td {
+        border-bottom: 1px solid $border-primary;
+        background-color: transparent !important;
+    }
+
+    td {
+        display: flex;
+        gap: 30px;
+    }
+
+    tr {
+
+        &:hover {
+            cursor: pointer;
+
+            td {
+                > p {
+                    color: $primary-color;
+                }
+                
+            }
+        }
+    }
+}

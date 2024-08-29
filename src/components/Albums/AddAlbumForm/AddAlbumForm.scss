@@ -1,0 +1,25 @@
+@import '../../../scss/index.scss';
+
+.add-album-form {
+    &__content{
+        display: flex;
+       
+        &-image {
+            height: 150px;
+            width: 150px;
+            background-color: $background-secundary;
+            margin-right: 20px;
+            
+            > img {
+                height: 150px;
+                width: 150px;
+                object-fit: cover;
+            }
+        }
+
+        &-inputs {
+            width: calc(100% - 200px);
+            
+        }
+    }
+}

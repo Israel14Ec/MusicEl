@@ -1,0 +1,47 @@
+@import "../../scss/index.scss";
+
+.login-form {
+    margin-top: 50px;
+    h1 {
+        color: $font-light;
+        text-align: center;
+        font-size: 35px;
+        padding-bottom: 30px;
+    }
+    
+    button {
+        width: 100%;
+        margin-top: 50px;
+        color: $font-light;
+        background-color: $primary-color;
+        &:hover {
+            background-color: $primary-color-hover;
+        }
+    }   
+
+    &__options {
+        margin-top: 30px;
+        color: $font-light;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        p {
+            &:first-of-type {
+                margin-bottom: 20px;
+                cursor: pointer;
+            }
+
+            &:last-of-type {
+                color: $font-grey;
+
+                span {
+                    text-decoration: underline;
+                    padding-left: 5px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+}
+

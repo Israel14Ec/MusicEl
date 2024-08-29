@@ -1,0 +1,30 @@
+@import '../../../scss/index.scss';
+
+.list-artists {
+
+    max-height: 450PX;
+    overflow-y: auto;
+
+    &__artist {
+        margin-top: 30px;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 0.6;
+        }
+
+        > div {
+            width: 110px;
+            height: 110px;
+            background-position: center;
+            background-size: cover;
+            border-radius: 100px;
+            margin: 0 auto;
+        }
+
+        > p {
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+}

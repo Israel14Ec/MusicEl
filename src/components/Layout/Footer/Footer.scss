@@ -1,0 +1,46 @@
+@import '../../../scss/index.scss';
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    margin: 0 20px;
+
+    &__left {
+        display: flex;
+        align-items: center;
+        width: 20%;
+
+        img {
+            width: 55px;
+            height: 55px;
+            margin-right: 10px;
+            border-radius: 100%;
+
+        }
+    }
+
+    &__center {
+        width: 60%;
+
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 20%;
+        gap: 10px;
+    }
+
+    .rotating-thumbnail {
+        animation: spin 10s linear infinite; 
+    
+    }
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    
+}

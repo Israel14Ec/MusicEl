@@ -1,0 +1,12 @@
+@import './index.scss';
+
+.button_green {
+    width: 100%;
+    margin-top: 25px;
+    color: $font-light;
+    background-color: $primary-color !important;
+    color: $font-light !important;
+    &:hover {
+        background-color: $primary-color-hover !important;
+    }
+}   

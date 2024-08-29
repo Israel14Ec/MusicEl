@@ -1,0 +1,35 @@
+@import '../../../scss/index.scss';
+
+.add-song-form {
+
+    &__file {
+        background-color: $background-secundary;
+        padding: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+
+        &:hover {
+            cursor: pointer;
+            span {
+                opacity: 0.6;
+            }
+        }
+
+        > div > p {
+            color: $font-grey;
+            margin: 0;
+
+            > span {
+                color: $font-light;
+            }
+        }
+        .song-name { // Cambiado a .song-name para coincidir con la clase en JSX
+            color: $font-light;
+            font-weight: bold; // Ejemplo de estilo adicional
+        }
+    }
+}

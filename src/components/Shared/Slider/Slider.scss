@@ -1,0 +1,50 @@
+@import '../../../scss/index.scss';
+
+.slider {
+
+    &__item {
+        padding: 0 15px;
+        cursor: pointer;
+ 
+        img {
+            width: 100%;
+   
+            object-fit: cover;
+        }
+
+        > h3 {
+
+            margin-top: 10px;
+            font-size: 12px;
+            font-weight: 100;
+            color:  $font-light;
+        }
+
+        &-block-play {
+            position: relative;
+            &:hover {
+                .slider__item-block-play__icon {
+                    display: flex;
+                }
+    
+            }
+            &__icon {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 25px;
+                height: 100%;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+                font-size: 35px;
+                background-color: #000;
+                opacity: 0.7;
+            }
+        }
+    }
+
+    
+}

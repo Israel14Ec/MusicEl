@@ -1,0 +1,20 @@
+@import '../../../scss/index.scss';
+
+.list-albums {
+    max-height: 450PX;
+    overflow-y: auto;
+    margin-bottom: 30px !important;
+
+    &__album {
+        &:hover {
+            cursor: pointer;
+            opacity: 0.6;
+        }
+
+        > p {
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+
+}
