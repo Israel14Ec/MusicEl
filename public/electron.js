@@ -39,7 +39,6 @@ const createWindow = () => {
     } else {
         mainWindow.loadFile(path.join('./dist/index.html'));
     }
-    
 }
 
 // Renderiza cuando la aplicación está lista
